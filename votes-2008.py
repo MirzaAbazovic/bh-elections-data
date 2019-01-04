@@ -1,5 +1,4 @@
 ﻿from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
 import xlsxwriter
 import json
 import http.client
@@ -65,5 +64,5 @@ for opcina,stranka,glas,manda in (data):
 
 workbook.close()
 
-#with open('data2008.json', 'wb') as outfile:
-#    json.dumps(data, outfile)
+with open('data2008.json', 'wb') as outfile:
+    json.dumps(data, outfile)
